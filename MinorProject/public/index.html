@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Complaint Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <h2 class="page-title">College Helpdesk</h2>
+  <a href="admin.html" class="dashboard-link">Admin</a>
+</header>
+
+<section class="form-container">
+  <h3>Register a Complaint</h3>
+
+  <form id="complaintForm">
+    <input type="text" id="name" placeholder="Student Name" required />
+    <input type="text" id="regNo" placeholder="Registration Number" required />
+
+    <select id="type" required>
+      <option value="">Select Complaint Type</option>
+      <option value="Academic">Academic</option>
+      <option value="Hostel">Hostel</option>
+      <option value="Infrastructure">Infrastructure</option>
+      <option value="Faculty">Faculty</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <textarea id="description" placeholder="Explain your problem in detail" required></textarea>
+
+    <button type="submit">Submit Complaint</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

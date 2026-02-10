@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Complaint Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <h2 class="page-title">Admin Dashboard</h2>
+  <a href="index.html" class="dashboard-link">Back to Form</a>
+</header>
+
+<section class="dashboard">
+
+  <div class="stats">
+    <div class="card total">
+      <div class="card-label">Total</div>
+      <div class="card-value" id="total">0</div>
+    </div>
+
+    <div class="card pending">
+      <div class="card-label">Pending</div>
+      <div class="card-value" id="pending">0</div>
+    </div>
+
+    <div class="card progress">
+      <div class="card-label">In Progress</div>
+      <div class="card-value" id="progress">0</div>
+    </div>
+
+    <div class="card resolved">
+      <div class="card-label">Resolved</div>
+      <div class="card-value" id="resolved">0</div>
+    </div>
+
+    <div class="card rejected">
+      <div class="card-label">Rejected</div>
+      <div class="card-value" id="rejected">0</div>
+    </div>
+  </div>
+
+  <h3>All Complaints</h3>
+  <div id="complaintList"></div>
+</section>
+
+<script src="admin.js"></script>
+</body>
+</html>
